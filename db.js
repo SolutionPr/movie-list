@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const useDB = async (req, res, next) => {
+const connectToDB = async (req, res, next) => {
   try {
     await mongoose.connect(process.env.MONGOOS_URL, { useNewUrlParser: true, useUnifiedTopology: true });
     console.log("connected successfully-------------------------------------------->");
@@ -10,4 +10,4 @@ const useDB = async (req, res, next) => {
   }
 };
 
-export default useDB;
+export default connectToDB;

@@ -1,5 +1,5 @@
 import { loginUser } from "@/controllers/user.controller";
-import useDB from "@/db";
+import connectToDB from "@/db";
 import { NextResponse } from "next/server";
 
 // connect db
@@ -7,7 +7,7 @@ import { NextResponse } from "next/server";
 export const POST = async (req, res) => {
     try {
         const data = await req.json()        
-        await useDB()
+        await connectToDB()
         const result = await loginUser(data, res)
         return NextResponse.json(result, { status: result.status })
     } catch (error) {

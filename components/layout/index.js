@@ -18,6 +18,7 @@ export default function AppLayout({ children }) {
         } else {
             setLoading(false)
         }
+        // eslint-disable-next-line
     }, [])
 
     if (loading) {

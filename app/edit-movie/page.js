@@ -2,7 +2,7 @@ import React from "react";
 import CreateAndUpdateForm from "@/components/CreateAndUpdateForm";
 import AppLayout from "@/components/layout";
 
-const page = () => {
+const EditMovie = () => {
   return (
     <AppLayout>
       <CreateAndUpdateForm title="Edit" buttonText="Update" />
@@ -10,4 +10,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default EditMovie;

@@ -6,7 +6,7 @@ import AppLayout from "@/components/layout";
 import { getMovies } from "@/API-Calls/Others";
 import AppLoader from "@/components/AppLoader";
 
-const page = () => {
+const MovieList = () => {
   const [moviesList, setMoviesList] = useState([]);
   const [isLoading, setLoading] = useState(true);
 
@@ -44,4 +44,4 @@ const page = () => {
 
 };
 
-export default page;
+export default MovieList;

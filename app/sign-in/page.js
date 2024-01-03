@@ -4,7 +4,7 @@ import SignInForm from "@/components/SignInForm";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
-export default function page() {
+export default function SignIn() {
   const router = useRouter()
   const [loading, setLoading] = useState(true);
 
@@ -15,6 +15,7 @@ export default function page() {
     } else {
       setLoading(false)
     }
+    // eslint-disable-next-line
   }, [])
 
   if (loading) {

@@ -11,6 +11,7 @@ export default function Home() {
     } else {
       route.push("/sign-in")
     }
+    // eslint-disable-next-line
   }, [])
 
   return (<div />)

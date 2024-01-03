@@ -7,7 +7,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { createMovie, getMovieById, updateMovie } from "@/API-Calls/Others";
 import AppLoader from "./AppLoader";
 
-const createAndUpdateForm = (props) => {
+const CreateAndUpdateForm = (props) => {
     const { title, buttonText } = props
     const router = useRouter()
     const searchParams = useSearchParams()
@@ -133,6 +133,7 @@ const createAndUpdateForm = (props) => {
         if (buttonText === "Update" && _id) {
             getSingleMovie()
         }
+        // eslint-disable-next-line
     }, []);
 
     if (_id && isLoadingData) {
@@ -213,4 +214,4 @@ const createAndUpdateForm = (props) => {
     );
 };
 
-export default createAndUpdateForm;
+export default CreateAndUpdateForm;

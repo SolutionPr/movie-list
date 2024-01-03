@@ -67,7 +67,7 @@ const MoviesList = (props) => {
       </div>
 
       <div>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: "20px" }}>
           <Pagination
             total={Math.ceil(totalItems / itemsPerPage)}
             initialPage={currentPage}

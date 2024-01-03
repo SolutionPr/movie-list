@@ -4,9 +4,8 @@ export const loginUser = async (req, res) => {
   const userData = req;
   let resultData = {};
   const result = await Users.find({ email: userData.email });
-  const result1 = await Users.create(userData);
   console.log("=============");
-  console.log(userData, result, result1);
+  console.log(userData, result);
   console.log("=============");
   if (
     result.length &&
